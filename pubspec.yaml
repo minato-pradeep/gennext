@@ -1,0 +1,80 @@
+name: bluebug
+description: BlueBug - Housing Community App
+publish_to: "none"
+version: 1.0.0+1
+
+environment:
+  sdk: ">=3.0.0 <4.0.0"
+
+dependencies:
+  flutter:
+    sdk: flutter
+  
+  # URL Launcher for WhatsApp
+  url_launcher: ^6.2.5
+  
+  # Image Picker for Complaints
+  image_picker: ^1.0.7
+  
+  # UI & Icons
+  cupertino_icons: ^1.0.6
+  
+  # Networking
+  http: ^1.1.0
+  
+  # Storage
+  shared_preferences: ^2.2.2
+  
+  # Loading Effects
+  shimmer: ^3.0.0
+  
+  # PDF Generation
+  printing: ^5.11.1
+  pdf: ^3.10.7
+  
+  # State Management
+  provider: ^6.1.1
+
+  # Carousel
+  carousel_slider: ^5.0.0
+
+  # SOS Emergency System
+  geolocator: ^11.0.0
+  audioplayers: ^6.0.0
+  permission_handler: ^11.3.0
+
+dev_dependencies:
+  flutter_test:
+    sdk: flutter
+  flutter_lints: ^3.0.0
+  
+  # App Icon Generator
+  flutter_launcher_icons: ^0.13.1
+
+flutter:
+  uses-material-design: true
+  
+  # Assets for custom icons
+  assets:
+    - assets/icons/
+    - assets/audio/
+    - assets/offers/
+    - assets/images/
+
+  fonts:
+    - family: Segoe UI
+      fonts:
+        - asset: assets/fonts/segoe-ui.ttf
+        - asset: assets/fonts/segoe-ui-semibold.ttf
+          weight: 600
+        - asset: assets/fonts/segoe-ui-bold.ttf
+          weight: 700
+
+# App Icon Configuration
+flutter_launcher_icons:
+  android: true
+  ios: true
+  image_path: "assets/icons/nextgen_icon.png"
+  adaptive_icon_background: "#FFFFFF"
+  adaptive_icon_foreground: "assets/icons/nextgen_icon.png"
+  remove_alpha_ios: true
